@@ -1,0 +1,19 @@
+﻿@page "/"
+@using ApplicationLayer.Services
+@using DomainLayer.Entities;
+@using NetcodeHub.Packages.Components.Validations;
+@* @inject IEmployeeService employee; *@
+<PageTitle>Home</PageTitle>
+
+<h1>Employee List</h1>
+<EditForm>
+    <DataAnnotationsValidator>
+
+    </DataAnnotationsValidator>
+
+</EditForm>
+
+
+@code {
+    Employee employee = new Employee();
+}
